@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NICKLASBAHRE — Il calcio senza filtri</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+
+header{background:#050505;border-bottom:2px solid #087cff;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:18px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:1px}
+.logo span{color:#087cff}
+nav{display:flex;gap:22px;font-size:14px;font-weight:bold}
+nav a:hover{color:#087cff}
+
+.hero{max-width:1100px;margin:auto;padding:100px 20px 80px}
+.badge{display:inline-block;border:1px solid #087cff;color:#087cff;padding:7px 12px;border-radius:20px;font-size:12px;font-weight:bold;margin-bottom:20px}
+.hero h1{font-size:clamp(48px,9vw,100px);line-height:.9;text-transform:uppercase;font-weight:900}
+.hero h1 span{color:#087cff}
+.hero p{max-width:600px;margin-top:25px;color:#aaa;font-size:18px}
+.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:6px;font-weight:bold;border:1px solid #087cff}
+.primary{background:#087cff;color:#fff}
+.secondary{background:transparent;color:#fff}
+
+section{max-width:1100px;margin:auto;padding:70px 20px}
+.section-title{font-size:34px;font-weight:900;margin-bottom:30px}
+.section-title span{color:#087cff}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#101010;border:1px solid #222;border-radius:10px;padding:25px;transition:.2s}
+.card:hover{border-color:#087cff;transform:translateY(-3px)}
+.category{color:#087cff;font-size:12px;font-weight:bold;text-transform:uppercase}
+.card h3{font-size:22px;margin:12px 0}
+.card p{color:#999;font-size:15px}
+.date{display:block;color:#666;font-size:12px;margin-top:18px}
+
+.categories{display:flex;gap:10px;flex-wrap:wrap}
+.cat{border:1px solid #333;padding:10px 18px;border-radius:30px;color:#bbb}
+.cat:hover{border-color:#087cff;color:#087cff}
+
+.follow{background:linear-gradient(135deg,#07111d,#050505);border:1px solid #087cff;border-radius:12px;text-align:center;padding:60px 20px}
+.follow h2{font-size:40px}
+.follow p{color:#aaa;margin:15px auto 25px;max-width:600px}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about h2{font-size:42px}
+.about p{color:#aaa;margin-top:15px}
+
+footer{border-top:1px solid #222;text-align:center;padding:30px 20px;color:#666;font-size:13px}
+
+@media(max-width:700px){
+nav{display:none}
+.hero{padding-top:70px}
+.grid{grid-template-columns:1fr}
+.about{grid-template-columns:1fr}
+.about h2{font-size:34px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">NICKLAS<span>BAHRE</span></div>
+<nav>
+<a href="#notizie">NOTIZIE</a>
+<a href="#categorie">CATEGORIE</a>
+<a href="#chi-sono">CHI SONO</a>
+<a href="https://x.com/NicklasBahre" target="_blank">X</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="badge">ACCOUNT SATIRICO • CALCIO</div>
+<h1>IL CALCIO<br><span>SENZA FILTRI.</span></h1>
+<p>
+Satira, meme, opinioni e tutto quello che ruota intorno al mondo del calcio.
+Qui non si fanno sconti a nessuno.
+</p>
+
+<div class="buttons">
+<a class="btn primary" href="#notizie">LEGGI LE NOTIZIE</a>
+<a class="btn secondary" href="https://x.com/NicklasBahre" target="_blank">SEGUIMI SU X</a>
+</div>
+</section>
+
+<section id="notizie">
+<h2 class="section-title">ULTIME <span>NOTIZIE</span></h2>
+
+<div class="grid">
+
+<article class="card">
+<div class="category">Inter</div>
+<h3>Il mondo nerazzurro senza filtri</h3>
+<p>News, commenti e satira dedicati all'Inter e a tutto ciò che succede dentro e fuori dal campo.</p>
+<span class="date">22 SETTEMBRE 2026</span>
+</article>
+
+<article class="card">
+<div class="category">Satira</div>
+<h3>Il calcio visto da un'altra prospettiva</h3>
+<p>Meme, ironia e contenuti satirici sul mondo del pallone.</p>
+<span class="date">22 SETTEMBRE 2026</span>
+</article>
+
+<article class="card">
+<div class="category">Calcio</div>
+<h3>Le ultime dal mondo del calcio</h3>
+<p>Commenti, curiosità e tutto quello che merita di essere raccontato.</p>
+<span class="date">21 SETTEMBRE 2026</span>
+</article>
+
+</div>
+</section>
+
+<section id="categorie">
+<h2 class="section-title">CATEGORIE</h2>
+
+<div class="categories">
+<a class="cat" href="#notizie">INTER</a>
+<a class="cat" href="#notizie">CALCIO</a>
+<a class="cat" href="#notizie">SATIRA</a>
+<a class="cat" href="#notizie">OPINIONI</a>
+<a class="cat" href="#notizie">MEME</a>
+</div>
+</section>
+
+<section>
+<div class="follow">
+<h2>SEGUIMI SU X</h2>
+<p>
+Tutti i contenuti, i meme e le provocazioni quotidiane direttamente su X.
+</p>
+<a class="btn primary" href="https://x.com/NicklasBahre" target="_blank">
+@NICKLASBAHRE
+</a>
+</div>
+</section>
+
+<section id="chi-sono">
+<div class="about">
+<div>
+<h2>CHI È<br><span style="color:#087cff">NICKLASBAHRE?</span></h2>
+</div>
+
+<div>
+<p>
+Un account satirico dedicato al calcio, con una particolare attenzione
+all'Inter, ai meme e a tutto ciò che succede nel mondo del pallone.
+</p>
+<p>
+Il sito raccoglie contenuti, articoli e aggiornamenti per avere tutto
+in un unico posto.
+</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 NICKLASBAHRE — Il calcio senza filtri.
+</footer>
+
+</body>
+</html>
